@@ -24,10 +24,10 @@ from openedx.core.djangolib.markup import HTML, Text
   <div>
     <form method="get" action="/courses">
       <label for="home-search" class="search-bar-label"><!-- react-text: 17 -->Search<!-- /react-text --><!-- react-text: 18 -->:<!-- /react-text --></label>
-      <input type="text" id="home-search" value="" autocomplete="off" role="combobox" aria-autocomplete="list" aria-owns="react-autowhatever-home-search-search-bar" aria-expanded="false" aria-haspopup="false" class="react-autosuggest__input" placeholder="" spellcheck="false">
+      <input type="text" name="search_query" id="home-search" value="" autocomplete="off" role="combobox" aria-autocomplete="list" aria-owns="react-autowhatever-home-search-search-bar" aria-expanded="false" aria-haspopup="false" class="react-autosuggest__input" placeholder="" spellcheck="false">
       <button id="edit-submit-home-search" class="btn btn-transparent edit-submit form-submit js-search-button" type="submit">
       <span class="sr">Submit a course search</span>
-      <span class="icon fa fa-search" aria-hidden="true"></span></button></div>
+      <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span></button></div>
     </form>
     <div id="react-autowhatever-home-search-search-bar" class="react-autosuggest__suggestions-container"><!-- react-text: 24 --><!-- /react-text --></div></div></div></div></div>
   
